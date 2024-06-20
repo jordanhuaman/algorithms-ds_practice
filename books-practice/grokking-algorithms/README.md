@@ -48,3 +48,4 @@
 - **SSort vs QSort**: QSort es mas rapido
   - SSort: solo recive un array
   ![SelectionSort](SSort.png)
+  - SSort: encuentra el elemento mas pequeño
