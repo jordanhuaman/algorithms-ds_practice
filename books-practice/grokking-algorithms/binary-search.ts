@@ -18,7 +18,7 @@ function binary_search(list: Array<number>, element: number) {
 }
 function generarNumeros() {
   let numeros: Array<number> = [];
-  for (let i = 0; i <= 100; i++) {
+  for (let i = 0; i <= 20; i++) {
     numeros.push(i);
   }
   return numeros;

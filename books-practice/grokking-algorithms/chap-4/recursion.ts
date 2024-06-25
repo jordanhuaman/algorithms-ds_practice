@@ -6,6 +6,7 @@ function sum(arr: Array<number>) {
   return arr[0] + sum(arr.slice(1))
 }
 console.log(sum([1, 2, 3, 4]))
+
 function count(arr: Array<number>) {
   if (arr.length === 0) {
     return 0
@@ -38,11 +39,11 @@ function findDuplicate(obje: number, arr: Array<number>) {
     return (obje === arr[0]) ? true : false
   }
   let fakeDuplicate = findDuplicate(obje, arr.slice(1,))
-  console.log({ d: fakeDuplicate, data1: arr[0], data2: arr[1], dat3:arr[2], len: arr.length })
+  console.log({ d: fakeDuplicate, data1: arr[0], data2: arr[1], dat3: arr[2], len: arr.length })
   return (arr[0] === obje) ? true : false
 }
 
-function findDuplicate2(arr:Array<number>, index = 0) {
+function findDuplicate2(arr: Array<number>, index = 0) {
   if (index >= arr.length) {
     return false;
   }
@@ -53,5 +54,24 @@ function findDuplicate2(arr:Array<number>, index = 0) {
 
   return findDuplicate2(arr, index + 1);
 }
-console.log(findDuplicate2([1,2,3,4,5,6,10,10,12,3]))
+
+function binarySearch(list: Array<number>, element: number) {
+  console.log(list);
+  if (list.length === 0) {
+    return 0;  // Elemento no encontrado
+  }
+  let mid = Math.floor((list.length - 1) / 2);
+  console.log(list[mid]);
+  if (list[mid] === element) {
+    return list[mid];
+  } else if (list[mid] < element) {
+    // Buscar en la mitad derecha
+    return binarySearch(list.slice(mid + 1), element);
+  } else {
+    // Buscar en la mitad izquierda
+    return binarySearch(list.slice(0, mid), element);
+  }
+}
+console.log(findDuplicate2([1, 2, 3, 4, 5, 6, 10, 10, 12, 3]))
 console.log(findDuplicate(2, [3, 4, 5, 2, 12, 20, 1, 2]))
+console.log(binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 9))
