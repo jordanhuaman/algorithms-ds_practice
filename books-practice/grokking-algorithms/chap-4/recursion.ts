@@ -5,7 +5,7 @@ function sum(arr: Array<number>) {
   console.log(arr.slice(1))
   return arr[0] + sum(arr.slice(1))
 }
-console.log(sum([1, 2, 3, 4]))
+console.log(sum([1, 2, 3, 4, 5, 6]))
 
 function count(arr: Array<number>) {
   if (arr.length === 0) {
