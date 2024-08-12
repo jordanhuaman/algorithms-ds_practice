@@ -6,4 +6,8 @@ public class Test {
   public Counter multipleReturnValues() {
     return this.defectValue;
   }
+
+  public int acceptingReferences(Counter data) {
+    return data.getCount();
+  }
 }

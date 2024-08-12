@@ -17,6 +17,9 @@ public class Main {
     // ? Retornamos una clase con multiples posibles salidas
     System.out.println("aqui " + info.multipleReturnValues().getCount());
 
+    // ? aceptando referencias ya hechas
+    System.out.println("aqui2 " + info.acceptingReferences(object2));
+
     // ? Static method without instances
     Counter.SeeInfo();
     // ? How works final instances
