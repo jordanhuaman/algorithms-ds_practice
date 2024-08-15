@@ -1,2 +1,3 @@
 ### Learning
 > Es mejor tener un package raiz para que sea facil impotar Classes como `import src.Counter.java`
+> If we have another construstor that uses another one we can use `this(paramerter param1, paramerter parame2)`
