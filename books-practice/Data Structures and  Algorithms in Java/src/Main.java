@@ -24,5 +24,6 @@ public class Main {
     Counter.SeeInfo();
     // ? How works final instances
     System.out.println();
+
   }
 }
