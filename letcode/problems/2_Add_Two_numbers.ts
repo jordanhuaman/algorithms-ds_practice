@@ -3,7 +3,7 @@ const returnArray = (l1: Array<number>, l2: Array<number>) => {
   let result: Array<number> = []
   let acumulador = 0
   let validator = 0
-  
+
   for (let i = 0; i <= l1.length - 1; i++) {
     if (l2[i] === undefined) {
       l2[i] = 0
@@ -29,7 +29,7 @@ const returnArray = (l1: Array<number>, l2: Array<number>) => {
   return result
 }
 
-const addTwoNumbers = (l1: Array<number>, l2: Array<number>) => {
+const addTwoNumbers2 = (l1: Array<number>, l2: Array<number>) => {
   let result: Array<number> = []
 
   if (l1.length >= l2.length) {
@@ -40,6 +40,15 @@ const addTwoNumbers = (l1: Array<number>, l2: Array<number>) => {
   console.log(result)
   return result
 }
-addTwoNumbers([9,9,9,9,9,9,9], [9, 9, 9, 9])
+addTwoNumbers2([9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9])
 // Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
 // Output: [8,9,9,9,0,0,0,1]
+
+
+
+function ListNode(val, next) {
+  this.val = (val === undefined ? 0 : val)
+  this.next = (next === undefined ? null : next)
+}
+
+
