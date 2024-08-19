@@ -9,7 +9,7 @@ public class CredictCard {
   private String bank;
   private String account;
   private int limit;
-  private double balance;
+  public double balance;
 
   public CredictCard(String cust, String bk, String acnt, int lim, double initialBal) {
     customer = cust;
