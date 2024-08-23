@@ -1,6 +1,7 @@
 package src.chap_2.interfaces;
 
-public class Photografer implements Selleble, Transportable {
+// ? Insurable inhering method of Sellele, Transportable
+public class Photografer implements Insurable {
   public String description() {
     return "weqwe";
   };
@@ -23,4 +24,9 @@ public class Photografer implements Selleble, Transportable {
     return false;
   };
 
+  @Override
+  public int insuredValue() {
+    // TODO Auto-generated method stub
+    return 0;
+  }
 }

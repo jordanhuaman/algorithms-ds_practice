@@ -1,6 +1,7 @@
 package src.chap_2.interfaces;
 
-public interface Transportable {
+public interface Transportable  {
   public int weight();
+
   public boolean isHazardous();
 }
