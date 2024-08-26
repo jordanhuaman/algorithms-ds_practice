@@ -12,5 +12,9 @@ public class Pair<A, B> {
   // TODO similar to typescript
   public static void main(String[] args) {
     Object obj1 = new Pair<String, Number>("Qweqwe", 1);
+    Pair<String, Double>[] holdings;
+    holdings = new Pair[25];
+    holdings[0] = new Pair<>("ORCL", 231.2);
+    System.out.println(holdings[0].second);
   }
 }
