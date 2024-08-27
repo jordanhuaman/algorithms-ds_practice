@@ -1,6 +1,6 @@
-package src.chap_1;
+package chap_1;
 
-import src.Counter;
+import Counter;
 
 public class Example {
   public static void main(String[] args) {

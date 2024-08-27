@@ -1,4 +1,4 @@
-package src.chap_1;
+package chap_1;
 
 /**
  * CredictCard
