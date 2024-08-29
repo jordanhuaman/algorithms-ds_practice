@@ -9,8 +9,8 @@ public class Main {
 
 
     board.addEntry(gamer3);
-    // board.addEntry(gamer1);
-    // board.addEntry(gamer2);
+    board.addEntry(gamer1);
+    board.addEntry(gamer2);
     board.printPlayers();
   }
 }
