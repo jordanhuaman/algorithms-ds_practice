@@ -12,3 +12,4 @@
 -  The Insertion-Sort Algorithm -> basic algorithm
 3.1.3 java.util Methods for Arrays and Random Numbers
 - Usar  `java.util.Random` para generar numeros ramdos desde una semilla(**seed**)
+- Tick tack toe -> lack of implemetation
