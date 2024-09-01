@@ -1,7 +1,6 @@
 package chap_1;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Excersixes {
   ArrayList<String> infoTypes = new ArrayList<String>();
