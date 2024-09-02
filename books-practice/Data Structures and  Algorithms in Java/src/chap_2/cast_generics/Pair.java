@@ -1,4 +1,4 @@
-package src.chap_2.cast_generics;
+package chap_2.cast_generics;
 
 public class Pair<A, B> {
   A first;

@@ -1,4 +1,4 @@
-package src.chap_2.cast_generics;
+package chap_2.cast_generics;
 
 // TODO if we want to create a class can accept any object without specificing
 public class ObjectPair {
