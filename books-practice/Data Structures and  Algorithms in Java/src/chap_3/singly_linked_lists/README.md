@@ -1,0 +1,2 @@
+### Learning
+- En los linked list tener en cuena que getNext devuelve una clase Node entera, en donde puede tener una variable que sea otra clase entera, es como las funciones recursivas, al final cuando llegan al null, explotan o retornan

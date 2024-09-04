@@ -1,27 +1,6 @@
 import chap_3.arrays.algorithms.Sorting;
 
 public class SinglyLinkedList<E> {
-  private static class Node<E> {
-    private E element;
-    private Node<E> next;
-
-    public Node(E e, Node<E> n) {
-      element = e;
-      next = n;
-    }
-
-    public E getElement() {
-      return element;
-    }
-
-    public Node<E> getNext() {
-      return next;
-    }
-
-    public void setNext(Node<E> n) {
-      next = n;
-    }
-  }
 
   private Node<E> head = null;
   private Node<E> tail = null;
@@ -80,12 +59,36 @@ public class SinglyLinkedList<E> {
     return answer;
   }
 
+  public void removeLast() {
+    if (isEmpty())
+      return;
+    Node<E> current = head;
+
+    for (int i = 0; i < size()-2; i++) {
+      current = current.getNext();
+      System.out.println(current.getElement());
+    }
+    current.setNext(null);
+    this.size--;
+
+  }
+
+  public void printList() {
+    Node<E> current = head;
+    while (current != null) {
+      System.out.print(current.getElement() + " -> ");
+      current = current.getNext();
+    }
+    System.out.println("null");
+  }
+
   public static void main(String[] args) {
     SinglyLinkedList<String> data = new SinglyLinkedList<>();
     data.addFirst("firsst Time");
     data.addFirst("Second time");
-    System.out.println(data.size());
-    System.out.println(data.isEmpty());
-    System.out.println(data.first());
+    data.addFirst("Thirt time");
+    data.addFirst("Forthy time");
+    data.removeLast();
+    data.printList();
   }
 }
