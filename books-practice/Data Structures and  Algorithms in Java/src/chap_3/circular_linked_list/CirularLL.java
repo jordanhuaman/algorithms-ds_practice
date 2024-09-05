@@ -38,6 +38,7 @@ public class CirularLL<T> {
       Node<T> newest = new Node<>(e, tail.getNext());
       tail.setNext(newest);
     }
+    size++;
   }
 
   public void addLast(T e) {
@@ -59,13 +60,14 @@ public class CirularLL<T> {
     return head.getElemt();
   }
 
+  // TODO bucle infinito porque es una lista circular
   public void printElement() {
-    Node<T> current = tail.getNext();
-    if (current==null) {
-      System.out.println("null element");
+    if (isEmpty()) {
+      System.out.println("is empthy");
+    } else {
+      Node<T> current = tail.getNext();
+      System.out.println(current.getNext().getElemt());
     }
-    System.out.println(current.getElemt());
-
   }
 
   public static void main(String[] args) {
