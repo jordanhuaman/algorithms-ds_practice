@@ -1,3 +1,5 @@
+package chap_3.simpleLL;
+
 public class Node<E> {
   private E element;
   private Node<E> next;

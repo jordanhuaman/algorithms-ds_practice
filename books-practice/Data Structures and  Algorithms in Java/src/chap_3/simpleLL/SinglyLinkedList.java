@@ -1,5 +1,4 @@
-import chap_3.arrays.algorithms.Sorting;
-
+package chap_3.simpleLL;
 public class SinglyLinkedList<E> {
 
   private Node<E> head = null;
