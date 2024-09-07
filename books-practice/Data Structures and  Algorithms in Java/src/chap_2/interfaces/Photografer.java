@@ -1,4 +1,4 @@
-package src.chap_2.interfaces;
+package chap_2.interfaces;
 
 // ? Insurable inhering method of Sellele, Transportable
 public class Photografer  implements Insurable {

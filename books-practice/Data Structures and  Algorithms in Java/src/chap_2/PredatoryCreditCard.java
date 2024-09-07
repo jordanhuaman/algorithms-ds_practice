@@ -1,6 +1,6 @@
-package src.chap_2;
+package chap_2;
 
-import src.chap_1.CredictCard;
+import chap_1.CredictCard;
 
 public class PredatoryCreditCard extends CredictCard {
   private double apr;

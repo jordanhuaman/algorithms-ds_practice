@@ -1,4 +1,4 @@
-package src.chap_2.exceptions;
+package chap_2.exceptions;
 
 public class GreatNumbers  {
   // TODO Passing positive numbers

@@ -1,4 +1,4 @@
-package src.chap_2.interfaces;
+package chap_2.interfaces;
 
 public class Main extends AbstractProgression {
   @Override

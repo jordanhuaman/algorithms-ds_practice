@@ -1,4 +1,4 @@
-package src.chap_2.excersices;
+package chap_2.excersices;
 
 public class Maryland extends State {
   public void printMe() {
