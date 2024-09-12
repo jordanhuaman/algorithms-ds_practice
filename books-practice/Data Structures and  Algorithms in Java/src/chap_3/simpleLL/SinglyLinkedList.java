@@ -1,4 +1,5 @@
 package chap_3.simpleLL;
+
 public class SinglyLinkedList<E> {
 
   private Node<E> head = null;
@@ -63,7 +64,7 @@ public class SinglyLinkedList<E> {
       return;
     Node<E> current = head;
 
-    for (int i = 0; i < size()-2; i++) {
+    for (int i = 0; i < size() - 2; i++) {
       current = current.getNext();
       System.out.println(current.getElement());
     }
@@ -79,6 +80,30 @@ public class SinglyLinkedList<E> {
       current = current.getNext();
     }
     System.out.println("null");
+  }
+
+  // TODO 3.5.2 Equivalence Testing with Linked Lists
+  public boolean equals(Object o) {
+    if (o == null)
+      return false;
+    if (getClass() != o.getClass())
+      return false;
+
+    SinglyLinkedList other = (SinglyLinkedList) o;
+
+    if (size != other.size)
+      return false;
+
+    Node walkA = head;
+    Node walkB = other.head;
+
+    while (walkA != null) {
+      if (!walkA.getElement().equals(walkB.getElement()))
+        return false;
+      walkA = walkA.getNext();
+      walkB = walkB.getNext();
+    }
+    return true;
   }
 
   public static void main(String[] args) {
