@@ -3,6 +3,7 @@ package chap_2.cast_generics;
 public class Porfolio<T> {
   T[] data;
 
+  @SuppressWarnings("unchecked")
   public Porfolio(int capacity) {
     // data = new T[capacity]; -> error compiler
     data = (T[]) new Object[capacity];

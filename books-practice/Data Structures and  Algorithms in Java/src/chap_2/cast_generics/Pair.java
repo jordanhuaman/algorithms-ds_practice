@@ -10,6 +10,7 @@ public class Pair<A, B> {
   }
 
   // TODO similar to typescript
+  @SuppressWarnings({ "unused", "unchecked" })
   public static void main(String[] args) {
     Object obj1 = new Pair<String, Number>("Qweqwe", 1);
     Pair<String, Double>[] holdings;

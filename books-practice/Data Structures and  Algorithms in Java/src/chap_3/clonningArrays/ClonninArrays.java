@@ -6,6 +6,7 @@ public class ClonninArrays<T> {
 
   public void simplyCopy() {
     int[] data = { 1, 2, 3, 4, 4 };
+    @SuppressWarnings("unused")
     int[] backup = data; // ! not a copy -> any change in data also change in backup
   }
 

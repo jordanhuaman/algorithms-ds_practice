@@ -20,6 +20,7 @@ public class Sorting {
   // 5>2 -> data[1] -> 5 => j = k(1) -> 5 5 3 1 6 
   // 5>2 -> data[0] -> null => j = 0 -> null 5 3 1 6
   // 5>2 -> data[0] -> 2 => j = k(1) -1 -> 2 5 3 1 6
+  @SuppressWarnings("static-access")
   public static void main(String[] args) {
     Sorting chartArrays = new Sorting();
     chartArrays.insertionSort(null);

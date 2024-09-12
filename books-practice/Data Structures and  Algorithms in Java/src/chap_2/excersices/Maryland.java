@@ -9,6 +9,7 @@ public class Maryland extends State {
     Region east = new State();
     State md = new Maryland();
     Object obj = new Place();
+    @SuppressWarnings("unused")
     Place usa = new Region();
     md.printMe();
     east.printMe();

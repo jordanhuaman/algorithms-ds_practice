@@ -14,6 +14,7 @@ public class ObjectPair {
     return first;
   }
 
+  @SuppressWarnings("unused")
   public static void main(String[] args) {
     Object obj1 = new ObjectPair("qwe", 2);
   }
