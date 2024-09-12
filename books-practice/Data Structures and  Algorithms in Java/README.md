@@ -13,3 +13,7 @@
 3.1.3 java.util Methods for Arrays and Random Numbers
 - Usar  `java.util.Random` para generar numeros ramdos desde una semilla(**seed**)
 - Tick tack toe -> lack of implemetation
+
+3.5.2 Equivalence Testing with Linked Lists
+- Diferences between arrays.equals(arrays) to Arrays.deepEquals(array1, array2)
+- retulst of getClass() and object.getClass()
