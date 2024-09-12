@@ -83,6 +83,7 @@ public class SinglyLinkedList<E> implements Cloneable {
   }
 
   // TODO 3.5.2 Equivalence Testing with Linked Lists
+  @SuppressWarnings("rawtypes")
   public boolean equals(Object o) {
     if (o == null)
       return false;
