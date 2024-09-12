@@ -19,6 +19,14 @@ public class ClonninArrays<T> {
     System.out.println(Arrays.equals(data, irData));
   }
 
+  public static int[][] deepClone(int[][] original) {
+    int[][] backup = new int[original.length][];
+    for (int k = 0; k < original.length; k++) {
+      backup[k] = original[k].clone();
+    }
+    return backup;
+  }
+
   public static void main(String[] args) {
     ClonninArrays<String> ca = new ClonninArrays<>();
 
