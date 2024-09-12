@@ -16,4 +16,6 @@
 
 3.5.2 Equivalence Testing with Linked Lists
 - Diferences between arrays.equals(arrays) to Arrays.deepEquals(array1, array2)
+  - .equals() -> para arrays unidimensionales **el problema en las n-dimensiones es que cada uno es un objeto y no hace referencia al mismo objeto y por eso se usa deepEquals()**
+  - deepEquals() -> no toma importancia a las clases de que estan dentro, solo ve si son iguales o no, recorrendo valor por valor como en muestra en simpleLL
 - retulst of getClass() and object.getClass()
