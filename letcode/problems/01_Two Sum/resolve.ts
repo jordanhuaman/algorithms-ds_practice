@@ -9,25 +9,23 @@ const twoSum = (nums: Array<number>, target: number) => {
         break outerLoop;
       }
     }
-    ;
   }
 }
 
 const twoSum2 = (nums: Array<number>, target: number) => {
-  const findIndex = (i: number, a: number): Array<number> => {  
+  const findIndex = (i: number, a: number): Array<number> => {
     if (i >= nums.length - 1) {
       return [];
     }
 
     if (a >= nums.length) {
-      return twoSum2(nums.slice(i + 1), target); // Llamada recursiva, eliminando el primer elemento
+      return twoSum2(nums.slice(i + 1), target);
     }
 
     if (nums[i] + nums[a] === target) {
       return [i, a];
     }
-
-    return findIndex(i, a + 1); // Continuar buscando con el siguiente índice `a`
+    return findIndex(i, a + 1);
   };
 
   return findIndex(0, 1);
