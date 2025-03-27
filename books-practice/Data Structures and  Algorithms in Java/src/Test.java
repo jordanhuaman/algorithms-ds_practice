@@ -1,5 +1,4 @@
-package src;
-
+// package src;
 public class Test {
 
   // ? Enums
