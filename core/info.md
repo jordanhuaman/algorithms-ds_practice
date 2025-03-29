@@ -1,0 +1,4 @@
+- LinkedList
+- ArrayList
+- Optmized find in nodes
+  - ![FindNodesOptimized](FindNodesOptimized.png)
