@@ -13,5 +13,6 @@ git add .
 git commit -m "$1"
 # push to the remote repository
 git push
-# merge the current branch with the main branch
-git merge main
+# merge the changes to the main branch
+git checkout main
+git merge
