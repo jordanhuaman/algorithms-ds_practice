@@ -44,7 +44,6 @@ export class ScoreBoard {
   }
 
   public add(entry: GameEntry): void {
-
     // 0 < 1
     if (this.numEntries == 0) {
       console.log("passign here first")
@@ -57,6 +56,7 @@ export class ScoreBoard {
     // -> 5
 
     let j = 0;
+    console.log(j)
     // 1. 5
     let next = entry;
 
@@ -81,8 +81,8 @@ export class ScoreBoard {
         // 2. 5
         // 3. 4
         this.arr[j] = entry;
-        j = j + 1;
       }
+      j++;
     }
 
   }
@@ -91,13 +91,15 @@ export class ScoreBoard {
 
 const test = new ScoreBoard(5);
 const gameEntry1 = new GameEntry(12, "jordan");
-const gameEntry2 = new GameEntry(20, "jordan2");
+const gameEntry2 = new GameEntry(40, "jordan2");
 const gameEntry3 = new GameEntry(30, "jordan3");
+const gameEntry4 = new GameEntry(100, "jordan3www");
 
 
 test.add(gameEntry1);
 test.add(gameEntry2);
 test.add(gameEntry3);
+test.add(gameEntry4)
 
 console.log(test.getByIndex(0).getName());
 console.log(test.getByIndex(0).getName());
