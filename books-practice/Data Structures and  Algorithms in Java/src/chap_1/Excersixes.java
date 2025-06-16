@@ -1,60 +1,92 @@
 package chap_1;
 
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.Scanner;
 
 public class Excersixes {
-  ArrayList<String> infoTypes = new ArrayList<String>();
 
   // ? R-1-1
   public String inputAllBaseTypes(String data) {
-    if (data.equalsIgnoreCase("true") || data.equalsIgnoreCase("false")) {
-      return "boolean type";
-    } else {
-      infoTypes.add("not boolean type");
-      try {
-        Integer.parseInt(data);
-        return "int type";
-      } catch (Exception e) {
-        infoTypes.add("not int type");
-        return "";
-      }
-    }
+
+    return "result";
   }
 
   // ? R-1.3
-  public void isMultiply(int num1, int num2, int multiply) {
-    int iterator = num2;
-    int it = 1;
-    while (iterator <= num1) {
-      if (iterator == num1) {
-        System.out.println("si es multiplo");
-        break;
-      } else {
-        System.out.println(iterator + " != " + num1 );
-        it = it + 1;
-        iterator = it * iterator;
+  public void isMultiply(long m, long n) {
+    if (m % n == 0) {
+      System.out.println(m + " is a multiple of " + n);
+    } else {
+      System.out.println(m + " is not a multiple of " + n);
+    }
+  }
+
+  // ? R-1.4
+  // Your method cannot use the multiplication, modulus, or division operators
+  public void isEven(int m) {
+    if (m == 0) {
+      System.out.println("is even");
+    } else if (m == 1) {
+      System.out.println("is odd");
+    } else {
+      isEven(m - 2);
+    }
+  }
+
+  // ? R-1.5
+  public int sumatoriaLess(int l) {
+    if (l == 0) {
+      return 0;
+    }
+    return l + sumatoriaLess(l - 1);
+  }
+
+  // ? R-1.5
+  public void sumatoriaLess2(int l) {
+    int total = 0;
+    for (int i = 0; i <= l; i++) {
+      total = total + i;
+    }
+    System.out.println("result is : " + total);
+  }
+
+  // ? R-1.6
+  public void addOdd(int l) {
+    int total = 0;
+
+    for (int i = 0; i <= l; i++) {
+      if (i % 2 != 0) {
+        total = total + i;
       }
     }
+    System.out.println("result is : " + total);
   }
-  public void isEven(int posibleEven){}
+  /**
+   * R-1.7 Write a short Java method that takes an integer n and returns the sum of the
+   * squares of all positive integers less than or equal to n.
+   */
+  public void addSquares(int l){
+    int total = 0;
 
-  public void showInfoTypes() {
-    for (String info : infoTypes) {
-      System.out.println(info);
+    for (int i = 0; i <= l; i++) {
+      total = total + (i * i);
     }
+    System.out.println("result is : " + total);
   }
 
+  /**
+   * R-1.8 Write a short Java method that counts the number of vowels in a given character
+   * string.
+   */
+  public void countVowels(String string){
+    
+  }
   public static void main(String[] args) {
-    // Scanner scan = new Scanner(System.in);
-    // System.out.println("Write any value");
-    // String data = scan.next();
-    // scan.close();
-    // Excersixes example = new Excersixes();
-    // example.inputAllBaseTypes(data);
-    // example.showInfoTypes();
-
-    // ? R-1.3
-    Excersixes obj1 = new Excersixes();
-    obj1.isMultiply(12, 2, 2);
+    Excersixes excersixes = new Excersixes();
+    excersixes.isMultiply(3, 2);
+    excersixes.isEven(11);
+    excersixes.sumatoriaLess2(10);
+    excersixes.addOdd(5);
+    excersixes.addSquares(3);
   }
 }
