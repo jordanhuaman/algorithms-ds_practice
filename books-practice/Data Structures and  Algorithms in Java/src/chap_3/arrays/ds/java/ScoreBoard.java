@@ -53,4 +53,20 @@ public class ScoreBoard {
     }
   }
 
+  public GameEntry deleteByIndex(int index) {
+    GameEntry solve = board[index];
+
+    if (index < numEntries - 1) {
+      int j = index;
+
+      while (j < numEntries-1) {
+        board[j] = board[j + 1];
+        j++;
+      }
+
+      board[numEntries-1] = null;
+    }
+
+    return solve;
+  }
 }
