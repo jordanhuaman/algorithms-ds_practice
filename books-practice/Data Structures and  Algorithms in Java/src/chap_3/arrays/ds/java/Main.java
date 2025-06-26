@@ -11,21 +11,25 @@ public class Main {
     GameEntry ga3 = new GameEntry("jordan2", 30);
     GameEntry ga4 = new GameEntry("jordan2", 20);
 
-    scoreBoard.add2(ga1);
-    scoreBoard.add2(ga2);
-    scoreBoard.add2(ga3);
-    scoreBoard.add2(ga4);
+    GameEntry test = new GameEntry("jordan211", 21);
+
+
+    scoreBoard.add(ga1);
+    scoreBoard.add(ga2);
+    scoreBoard.add(ga3);
+    scoreBoard.add(ga4);
+    scoreBoard.add(test);
 
     for (var i = 0; i < capacity; i++) {
       System.out.println(scoreBoard.getByIndex(i).getScore());
     }
 
-    System.out.println(" ----------- ");
-    scoreBoard.deleteByIndex(10);
+    // System.out.println(" ----------- ");
+    // scoreBoard.deleteByIndex(10);
 
-    for (var i = 0; i < capacity; i++) {
-      System.out.println(scoreBoard.getByIndex(i).getScore());
-    }
+    // for (var i = 0; i < capacity; i++) {
+    //   System.out.println(scoreBoard.getByIndex(i).getScore());
+    // }
 
   }
 }

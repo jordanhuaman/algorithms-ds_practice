@@ -2,6 +2,7 @@ package chap_3.arrays.ds.java;
 
 /**
  * {@link ScoreBoard} store new entries
+ * <p>The game entry only validate if the new entry is more high the the lowest score, that is in the [lenght-1]</p>
  */
 public class ScoreBoard {
   // 0
@@ -15,10 +16,16 @@ public class ScoreBoard {
   public GameEntry getByIndex(int index) {
     return board[index];
   }
-
+  /**
+   * 
+   * @param e : game entry to possible add to the scorboard
+   * {e} will be retained if the {board} is no fullfit 
+   * {e} if the board is not full, e will remplaze the smaller that is greater than
+   */
   public void add(GameEntry e) {
     int newScore = e.getScore();
 
+    // is the new entry e really a high score?
     if (numEntries < board.length || newScore > board[numEntries - 1].getScore()) {
       if (numEntries < board.length) {
         numEntries++;
