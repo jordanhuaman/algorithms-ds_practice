@@ -44,47 +44,45 @@ export class ScoreBoard {
   }
 
   public add(entry: GameEntry): void {
-    // 0 < 1
-    if (this.numEntries == 0) {
-      console.log("passign here first")
-      this.arr[0] = entry;
-      this.numEntries++;
+    let newEntry = entry.getScore();
+
+    if(this.numEntries < this.arr.length || newEntry > this.arr[this.numEntries-1].getScore()){
+      
+    }
+
+  }
+
+  public add2(entry: GameEntry): void {
+
+    if (this.numEntries === this.arr.length && entry.getScore() <= this.arr[this.numEntries - 1].getScore()) {
       return;
     }
 
-    // -> [10,4,2,1]
-    // -> 5
-
     let j = 0;
-    console.log(j)
-    // 1. 5
-    let next = entry;
+    let pointer = entry;
 
-    // 0 > 5
-    while (j < this.numEntries) {
-      console.log(j)
-      console.log("passign here first2")
-      // j=0 -> pass
-      // j=1 -> do
-      // j=2 -> do 
-
-
-      //1. 10 < 5 -> pass
-      //2. 4 < 5 -> do 
-      //3. 2 < 4 -> do
-      if (this.arr[j].getScore() < next.getScore()) {
-
-        //2. 4
-        //3. 2
-        next = this.arr[j];
-
-        // 2. 5
-        // 3. 4
-        this.arr[j] = entry;
+    while (j < this.arr.length) {
+      if (this.arr[j].getScore() < pointer.getScore()) {
+        this.arr[j] = pointer;
+        pointer = this.arr[j + 1];
       }
       j++;
     }
+    this.numEntries++;
+  }
 
+  public deletedByIndex(index: number) {
+    let j = index;
+
+
+    while (j < this.numEntries) {
+
+      if (this.arr[j + 1] == null) {
+        continue;
+      }
+      this.arr[j] = this.arr[j + 1];
+      j++;
+    }
   }
 }
 
