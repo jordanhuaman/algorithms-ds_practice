@@ -2,7 +2,10 @@ package chap_3.arrays.ds.java;
 
 /**
  * {@link ScoreBoard} store new entries
- * <p>The game entry only validate if the new entry is more high the the lowest score, that is in the [lenght-1]</p>
+ * <p>
+ * The game entry only validate if the new entry is more high the the lowest
+ * score, that is in the [lenght-1]
+ * </p>
  */
 public class ScoreBoard {
   // 0
@@ -16,11 +19,14 @@ public class ScoreBoard {
   public GameEntry getByIndex(int index) {
     return board[index];
   }
+
   /**
+   * Oroginal
    * 
    * @param e : game entry to possible add to the scorboard
-   * {e} will be retained if the {board} is no fullfit 
-   * {e} if the board is not full, e will remplaze the smaller that is greater than
+   *          {e} will be retained if the {board} is no fullfit
+   *          {e} if the board is not full, e will remplaze the smaller that is
+   *          greater than
    */
   public void add(GameEntry e) {
     int newScore = e.getScore();
@@ -29,17 +35,21 @@ public class ScoreBoard {
     if (numEntries < board.length || newScore > board[numEntries - 1].getScore()) {
       if (numEntries < board.length) {
         numEntries++;
-        int j = numEntries - 1;
-
-        while (j > 0 && board[j - 1].getScore() < newScore) {
-          board[j] = board[j - 1];
-          j--;
-        }
-        board[j] = e;
       }
+      int j = numEntries - 1;
+
+      while (j > 0 && board[j - 1].getScore() < newScore) {
+        board[j] = board[j - 1];
+        j--;
+      }
+      board[j] = e;
     }
   }
 
+  /**
+   * @me
+   * @param e
+   */
   public void add2(GameEntry e) {
     if (numEntries < board.length || e.getScore() > board[numEntries - 1].getScore()) {
 
@@ -59,6 +69,26 @@ public class ScoreBoard {
       }
     }
   }
+  /**
+   * official
+   * @param i
+   * @return
+   * @throws IndexOutOfBoundsException
+   */
+  public GameEntry remove(int i) throws IndexOutOfBoundsException {
+    if (i < 0 || i >= numEntries) {
+      throw new IndexOutOfBoundsException("Invalid index: " + i);
+
+    }
+    GameEntry temp = board[i];
+    for (int j = i; j < numEntries - 1; j++) {
+      board[j] = board[j + 1];
+    }
+
+    board[numEntries - 1] = null;
+    numEntries--;
+    return temp;
+  }
 
   public GameEntry deleteByIndex(int index) {
     GameEntry solve = board[index];
@@ -66,12 +96,12 @@ public class ScoreBoard {
     if (index < numEntries - 1) {
       int j = index;
 
-      while (j < numEntries-1) {
+      while (j < numEntries - 1) {
         board[j] = board[j + 1];
         j++;
       }
 
-      board[numEntries-1] = null;
+      board[numEntries - 1] = null;
     }
 
     return solve;

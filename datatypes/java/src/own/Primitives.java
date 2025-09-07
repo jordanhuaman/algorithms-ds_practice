@@ -8,6 +8,13 @@ public class Primitives {
     System.out.println((double) 5 / 3);
     System.out.println((float) 5 / 3);
     System.out.println(BigDecimal.valueOf((float)5/3));
+    conversion();
+  }
+
+  public static void conversion(){
+    Long num1 = 0L;
+    Integer conv1 = Math.toIntExact(num1);
+    System.out.println(conv1);
   }
 
   public static Integer working(int x, int y) {

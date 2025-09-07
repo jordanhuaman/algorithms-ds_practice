@@ -1,4 +1,4 @@
-package datatypes.java.src.own;
+// package datatypes.java.src.own;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
