@@ -1,4 +1,4 @@
-package chap_3.circular_linked_list;
+package chap_3.circular_linked_list.ds.java;
 
 public class CirularLL<T> {
   private Node<T> tail = null;
@@ -60,7 +60,7 @@ public class CirularLL<T> {
     return head.getElemt();
   }
 
-  // TODO bucle infinito porque es una lista circular
+  //TODO infinity bucle 
   public void printElement() {
     if (isEmpty()) {
       System.out.println("is empthy");
