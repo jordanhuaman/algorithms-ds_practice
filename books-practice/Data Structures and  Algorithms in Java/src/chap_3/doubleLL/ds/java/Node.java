@@ -1,4 +1,4 @@
-package chap_3.doubleLL;
+package chap_3.doubleLL.ds.java;
 public class Node<E> {
   private E element;
   private Node<E> prev;

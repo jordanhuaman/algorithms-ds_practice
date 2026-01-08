@@ -1,6 +1,6 @@
 import NodeCLL from "./node";
 
-class CircularLL<T> {
+export class CircularLL<T> {
   private tail: NodeCLL<T> | null = null;
   private size: number = 0;
 
