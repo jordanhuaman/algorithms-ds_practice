@@ -1,3 +1,4 @@
+import { NodeDLL } from "./NodeDLL";
 class DoubleLinkedList<T> {
   private header: NodeDLL<T>;
   private trailer: NodeDLL<T>;

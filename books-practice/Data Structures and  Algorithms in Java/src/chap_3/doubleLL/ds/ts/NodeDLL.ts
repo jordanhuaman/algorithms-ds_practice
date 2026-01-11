@@ -1,4 +1,4 @@
-class NodeDLL<T> {
+export class NodeDLL<T> {
   private element?: T;
   private next?: NodeDLL<T>;
   private prev?: NodeDLL<T>;
