@@ -1,4 +1,4 @@
-package chap_3.simpleLL;
+package chap_3.simpleLL.ds.java;
 
 public class Node<E> {
   private E element;

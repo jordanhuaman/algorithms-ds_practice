@@ -19,3 +19,7 @@
   - .equals() -> para arrays unidimensionales **el problema en las n-dimensiones es que cada uno es un objeto y no hace referencia al mismo objeto y por eso se usa deepEquals()**
   - deepEquals() -> no toma importancia a las clases de que estan dentro, solo ve si son iguales o no, recorrendo valor por valor como en muestra en simpleLL
 - retulst of getClass() and object.getClass()
+
+### Notions
+- The work of the conditionals might be help in many cases if we want to undestand well, so:
+  - `console.log(true || 1 > this.arr[-1].getScore())` : when this logic is executed, only the first sentences is evaluated, and the second is ignored, because the `||` works like this.

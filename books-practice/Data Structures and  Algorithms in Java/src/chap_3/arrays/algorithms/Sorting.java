@@ -1,6 +1,18 @@
 package chap_3.arrays.algorithms;
 
-// TODO Class for sorting arrays -> 3.1.2
+import java.util.Arrays;
+
+/**
+ * Class for sorting arrays -> 3.1.2
+ * This algorithm sorts element by element, comparing to those before it
+ * For instance: [3,1,2,0]
+ * [1] -> 3
+ * [3,1] ->2
+ * [3,2,1] -> 0
+ * [3,2,1] -> 3>0
+ * [3,2,1] -> 2>0
+ * ... [3,2,1,0]
+ */
 public class Sorting {
   public static void insertionSort(char[] data) {
     int n = data.length;
@@ -23,6 +35,7 @@ public class Sorting {
   @SuppressWarnings("static-access")
   public static void main(String[] args) {
     Sorting chartArrays = new Sorting();
+   Arrays.sort(args);
     chartArrays.insertionSort(null);
   }
 }

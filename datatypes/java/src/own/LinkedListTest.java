@@ -1,4 +1,4 @@
-package datatypes.java.src;
+// package datatypes.java.src.own;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -11,7 +11,6 @@ import java.util.List;
 public class LinkedListTest {
   public static void main(String[] args) {
     LinkedList<Integer> cars = new LinkedList<>();
-    
   }
   /*
    * Get item

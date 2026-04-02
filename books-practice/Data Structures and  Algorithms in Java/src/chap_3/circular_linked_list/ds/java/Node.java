@@ -1,4 +1,4 @@
-package chap_3.circular_linked_list;
+package chap_3.circular_linked_list.ds.java;
 
 public class Node<T> {
   private T element;

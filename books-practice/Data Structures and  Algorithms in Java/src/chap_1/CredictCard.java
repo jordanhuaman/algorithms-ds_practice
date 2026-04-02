@@ -1,15 +1,12 @@
 package chap_1;
 
-/**
- * CredictCard
- */
 public class CredictCard {
-
+  // Wrapper can be unboxed to primitive type
   private String customer;
   private String bank;
   private String account;
-  private int limit;
-  public double balance;
+  private Integer limit;
+  public Double balance;
 
   public CredictCard(String cust, String bk, String acnt, int lim, double initialBal) {
     customer = cust;

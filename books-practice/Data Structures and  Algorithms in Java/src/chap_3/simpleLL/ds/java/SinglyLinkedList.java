@@ -1,4 +1,4 @@
-package chap_3.simpleLL;
+package chap_3.simpleLL.ds.java;
 
 public class SinglyLinkedList<E> implements Cloneable {
 
@@ -132,7 +132,7 @@ public class SinglyLinkedList<E> implements Cloneable {
     data.addFirst("Second time");
     data.addFirst("Thirt time");
     data.addFirst("Forthy time");
-    data.removeLast();
+    // data.removeLast();
     data.printList();
   }
 }
