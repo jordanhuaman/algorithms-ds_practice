@@ -3,3 +3,5 @@ node_modules/
 Test.java
 TestSamples.java
 .vscode/
+package-lock.json
+package.json
