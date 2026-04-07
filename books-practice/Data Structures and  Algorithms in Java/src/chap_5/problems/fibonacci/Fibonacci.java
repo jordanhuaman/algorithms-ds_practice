@@ -1,4 +1,4 @@
-package chap_5.fibonacci;
+package chap_5.problems.fibonacci;
 
 public class Fibonacci {
   public static void main(String[] args) {

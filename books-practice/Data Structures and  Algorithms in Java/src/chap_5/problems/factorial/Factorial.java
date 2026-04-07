@@ -1,4 +1,4 @@
-package chap_5.factorial;
+package chap_5.problems.factorial;
 
 public class Factorial {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package chap_5.digitssum;
+package chap_5.problems.digitssum;
 
 public class SumDig {
   public static void main(String[] args) {
