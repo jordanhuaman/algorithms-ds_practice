@@ -1,4 +1,4 @@
-package chap_5.invertstring;
+package chap_5.problems.invertstring;
 
 public class StringInvest {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package chap_5.pow;
+package chap_5.problems.pow;
 
 public class Pow {
   public static void main(String[] args) {

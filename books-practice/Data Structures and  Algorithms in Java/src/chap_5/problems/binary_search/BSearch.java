@@ -1,4 +1,4 @@
-package chap_5.binary_search;
+package chap_5.problems.binary_search;
 
 public class BSearch {
   public static void main(String[] args) {

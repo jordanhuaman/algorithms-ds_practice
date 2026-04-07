@@ -1,4 +1,4 @@
-package chap_5.size_path;
+package chap_5.problems.size_path;
 
 import java.io.File;
 
