@@ -1,4 +1,11 @@
 // arr might be sorted
+/**
+* @param arr any arrays of numbers
+ * @param target the number we want to find
+ * @param low the lower index of the subarray to search
+ * @param higher the higher index of the subarray to search
+ * @returns the index of the target number if found, otherwise -1
+ */
 const search = (arr: number[], target: number, low: number, higher: number): number => {
 
   if (low > higher) {
