@@ -1,14 +1,27 @@
-package chap_6.queue.java;
+package chap_6.queue.java.array;
 
 /**
  * Array-Circularly based implementation of the Queue interface.
  * The queue has a fixed capacity, which is specified at the time of creation.
+ * Time complexity of any method is O(1) except for the constructor which is
+ * O(n) because of the array initialization.
+ * The space complexity is O(n) where n is the capacity of the queue, as it uses
+ * an array to store the elements.
  */
 public class ArrayQueue<E> implements Queue<E> {
   private static final int CAPACITY = 1000;
   private int f = 0;
   private E[] data;
   private int size = 0;
+
+  public ArrayQueue() {
+    this(CAPACITY);
+  }
+
+  public ArrayQueue(int capacity) {
+    // @SuppressWarnings("unchecked")
+    data = (E[]) new Object[capacity];
+  }
 
   @Override
   public int size() {
@@ -26,7 +39,8 @@ public class ArrayQueue<E> implements Queue<E> {
    * available slot using the formula (f + size) % data.length. This allows us to
    * wrap around to the beginning of the array when we reach the end, effectively
    * creating a circular buffer.
-   * [null,null,1,2,3] -> in this case the enqueue save the referent to add the next value in this case it is a [0]
+   * [null,null,1,2,3] -> in this case the enqueue save the referent to add the
+   * next value in this case it is a [0]
    */
   @Override
   public void enqueue(E o) {

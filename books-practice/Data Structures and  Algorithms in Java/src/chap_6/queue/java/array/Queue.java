@@ -1,4 +1,4 @@
-package chap_6.queue.java;
+package chap_6.queue.java.array;
 
 public interface Queue<E> {
   int size();
