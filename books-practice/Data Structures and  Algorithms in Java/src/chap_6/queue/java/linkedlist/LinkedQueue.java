@@ -4,6 +4,7 @@ import chap_3.simpleLL.ds.java.SinglyLinkedList;
 import chap_6.queue.java.array.Queue;
 
 /**
+ * Array Circularly
  */
 public class LinkedQueue<E> implements Queue<E> {
   private SinglyLinkedList<E> list = new SinglyLinkedList<>();
