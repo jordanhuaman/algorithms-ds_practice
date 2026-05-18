@@ -16,4 +16,4 @@
 ### Aritmetic
 - `5/3 -> 1`. By default return the 0
 - `(double) 5/3 -> 1.6666667` -> return the decimal part also.
-- `5%3 -> 2` -> return the rest part
+- `5 % 3 -> 2` -> return the rest part
