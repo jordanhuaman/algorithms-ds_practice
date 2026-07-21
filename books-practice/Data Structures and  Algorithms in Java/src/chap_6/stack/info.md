@@ -1,0 +1,2 @@
+ xcrgFEsdgetzc ### Java Stack
+- **Array Stack implementation**: in fact the implementation dont move elements. It maintan a top reference with `t`, and when we insert elements in the stack. It looks like `[1,_,_,_]` and `[1,2,_,_]`. and the `t` reference incremente alonside the array.

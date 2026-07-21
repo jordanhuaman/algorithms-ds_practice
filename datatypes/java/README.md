@@ -12,3 +12,8 @@
 - Float can't handle the full presicion of a double.
 - Float 32 bits -> When we define a float' variable, it fill 4bytes or 32 bits of storing.
 - Double 64 bits
+
+### Aritmetic
+- `5/3 -> 1`. By default return the 0
+- `(double) 5/3 -> 1.6666667` -> return the decimal part also.
+- `5 % 3 -> 2` -> return the rest part
