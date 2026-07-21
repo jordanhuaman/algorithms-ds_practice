@@ -1,4 +1,4 @@
-package letcode_neetcode.leetcode.problems.two_sum_01;
+package letcode.problems.two_sum_01;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package letcode_neetcode.leetcode.problems.add_two_numbers_02;
+package letcode.problems.add_two_numbers_02;
 
 public class ListNode {
   public int value;
